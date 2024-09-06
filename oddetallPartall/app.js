@@ -1,9 +1,10 @@
-let numberPrint = document.getElementById("numberPrint")
-let partallBtn = document.getElementById("partallKnapp")
-let oddetallBtn = document.getElementById("oddetallKnapp")
+let numberPrint = document.getElementById("numberPrint");
+let partallBtn = document.getElementById("partallKnapp");
+let oddetallBtn = document.getElementById("oddetallKnapp");
 let tallGrid = [];
+let opptillTall = 100;
 
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= opptillTall; i++) {
     tallGrid.push(i);
 }
 
@@ -23,5 +24,5 @@ function printPartall() {
     numberPrint.innerHTML = partall
 }
 
-partallBtn.onclick = printPartall
-oddetallBtn.onclick = printOddetall
+partallBtn.onclick = printPartall;
+oddetallBtn.onclick = printOddetall;
